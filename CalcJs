@@ -1,0 +1,44 @@
+({
+    sumFunction : function(component, event, helper) {
+        var v1= component.get("v.input1")
+        var v2= component.get("v.input2")
+
+        var result=parseInt(v1)+parseInt(v2)
+        component.set("v.output",result)
+    },
+    subFunction : function(component, event, helper) {
+        var v1= component.get("v.input1")
+        var v2= component.get("v.input2")
+
+        var result=parseInt(v1)-parseInt(v2)
+        component.set("v.output",result)
+    },
+    mulFunction : function(component, event, helper) {
+        var v1= component.get("v.input1")
+        var v2= component.get("v.input2")
+
+        var result=parseInt(v1)*parseInt(v2)
+        component.set("v.output",result)
+    },
+    divFunction : function(component, event, helper) {
+        var v1= component.get("v.input1")
+        var v2= component.get("v.input2")
+
+        if(v2==0)
+        {
+            var toastEvent = $A.get("e.force:showToast");
+            toastEvent.setParams({
+                "title": "Failed!",
+                type: "Error",
+                "message": "You cant delete a Number by zero."
+                 });
+                 toastEvent.fire();
+        }
+        
+        else
+        {
+        var result=parseInt(v1)/parseInt(v2)
+        component.set("v.output",result)
+        }
+    }
+})
