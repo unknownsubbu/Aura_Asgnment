@@ -1,0 +1,15 @@
+.THIS.c-container {
+    border: 1px solid #234076;
+    margin: 10px 0 20px 0;
+
+}
+.THIS .border {
+    border: solid 2.5px #ccc;
+    padding: 1.5rem;
+    text-align: center;
+}
+.THIS .border1 {
+    border: solid 2.5px #ccc;
+    padding: 0.7rem;
+    text-align: center;
+}
