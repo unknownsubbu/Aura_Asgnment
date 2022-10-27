@@ -1,0 +1,30 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+
+    <aura:attribute name="input1" type="Integer"/>
+    <aura:attribute name="input2" type="Integer"/>
+    <aura:attribute name="output" type="Integer"/>
+
+<lightning:card  title="Simple Calculator">
+    <div class="slds-p-left_large">
+        <div class="slds-p-right_large">
+            <lightning:input type="number" name="input1" label="Enter a number" value="{!v.input1}" />
+            <lightning:input type="number" name="input2" label="Enter a number" value="{!v.input2}"/>
+
+            <div class="slds-p-top_medium">
+                <p>Result : <b>{!v.output}</b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slds-p-top_medium">
+        <div class="slds-align_absolute-center">
+            <lightning:button variant="brand" label="Sum "  onclick="{!c.sumFunction}"></lightning:button>
+            <lightning:button variant="brand" label="Substraction "  onclick="{!c.subFunction}"></lightning:button>
+            
+            <lightning:button variant="brand" label="Multiplication "  onclick="{!c.mulFunction}"></lightning:button>
+            <lightning:button variant="brand" label="Division "  onclick="{!c.divFunction}"></lightning:button>
+        </div>
+    </div>
+</lightning:card>
+
+</aura:component>	
