@@ -1,0 +1,86 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <lightning:card  title="Fruits">
+    <div class="c-container">
+        <lightning:layout multipleRows="true">
+
+            <lightning:layoutItem padding="around-small" size="9">
+                <div class="border1 ">
+                    <h2>Fruits Name</h2>
+                </div>
+            </lightning:layoutItem>
+
+            <lightning:layoutItem padding="around-small" size="10">
+                <lightning:layout>
+                    <lightning:layoutItem padding="around-small" size="3">
+                        <div class="border ">
+                            <h2>Apple</h2>
+                        </div>
+                    </lightning:layoutItem>
+
+                    <lightning:layoutItem padding="around-small" size="3">
+                        <div class="border ">
+                            <h2>Watermelon</h2>
+                        </div>
+                    </lightning:layoutItem>
+
+                    <lightning:layoutItem padding="around-small" size="3">
+                        <div class="border ">
+                            <h2>PineApple</h2>
+                        </div>
+                    </lightning:layoutItem>  
+                </lightning:layout>
+            </lightning:layoutItem>
+
+            <lightning:layoutItem padding="around-small" size="10">
+                <lightning:layout>
+                    <lightning:layoutItem padding="around-small" size="3">
+                        <div class="border ">
+                            <h2>Gauva</h2>
+                        </div>
+                    </lightning:layoutItem>
+
+                    <lightning:layoutItem padding="around-small" size="3">
+                        <div class="border ">
+                            <h2>Sweet Lime</h2>
+                        </div>
+                    </lightning:layoutItem>
+
+                    <lightning:layoutItem padding="around-small" size="3">
+                        <div class="border ">
+                            <h2>papaya</h2>
+                        </div>
+                    </lightning:layoutItem>
+                    </lightning:layout>
+                </lightning:layoutItem>
+
+                    <lightning:layoutItem padding="around-small" size="10">
+                        <lightning:layout>
+                            <lightning:layoutItem padding="around-small" size="3">
+                                <div class="border ">
+                                    <h2>Grapes</h2>
+                                </div>
+                            </lightning:layoutItem>
+        
+                            <lightning:layoutItem padding="around-small" size="3">
+                                <div class="border ">
+                                    <h2>Orange</h2>
+                                </div>
+                            </lightning:layoutItem>
+        
+                            <lightning:layoutItem padding="around-small" size="3">
+                                <div class="border ">
+                                    <h2>Lemon</h2>
+                                </div>
+                            </lightning:layoutItem> 
+                        </lightning:layout>
+                    </lightning:layoutItem>
+
+            <lightning:layoutItem flexibility="auto" padding="around-small" size="9">
+                <div class=" border1">
+                    <h2>Enough Fruits for Today</h2>
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</lightning:card>
+</aura:component>	
